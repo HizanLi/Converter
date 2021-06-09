@@ -3,7 +3,7 @@ from decimal import *
 from functools import partial
 
 from PyQt5.QtWidgets import QApplication, QMainWindow
-import interface
+import Length
 import main
 
 
