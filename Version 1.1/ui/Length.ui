@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1150</width>
-    <height>230</height>
+    <width>1299</width>
+    <height>855</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <widget class="QComboBox" name="comboBoxInputMetricUnits">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>220</x>
       <y>60</y>
-      <width>281</width>
+      <width>130</width>
       <height>70</height>
      </rect>
     </property>
@@ -76,9 +76,9 @@
    <widget class="QComboBox" name="comboBoxInputImperialUnits">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>370</x>
       <y>60</y>
-      <width>280</width>
+      <width>130</width>
       <height>70</height>
      </rect>
     </property>
@@ -132,7 +132,7 @@
      <rect>
       <x>10</x>
       <y>80</y>
-      <width>250</width>
+      <width>200</width>
       <height>30</height>
      </rect>
     </property>
@@ -143,9 +143,9 @@
    <widget class="QComboBox" name="comboBoxOutMetricUnits">
     <property name="geometry">
      <rect>
-      <x>860</x>
+      <x>760</x>
       <y>60</y>
-      <width>281</width>
+      <width>130</width>
       <height>70</height>
      </rect>
     </property>
@@ -202,9 +202,9 @@
    <widget class="QLineEdit" name="LengthOut">
     <property name="geometry">
      <rect>
-      <x>600</x>
+      <x>550</x>
       <y>80</y>
-      <width>250</width>
+      <width>200</width>
       <height>30</height>
      </rect>
     </property>
@@ -215,9 +215,9 @@
    <widget class="QComboBox" name="comboBoxOutputImperialUnits">
     <property name="geometry">
      <rect>
-      <x>860</x>
+      <x>910</x>
       <y>60</y>
-      <width>281</width>
+      <width>130</width>
       <height>70</height>
      </rect>
     </property>
@@ -269,7 +269,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>520</x>
       <y>90</y>
       <width>16</width>
       <height>16</height>
@@ -301,7 +301,7 @@
    <widget class="QFrame" name="Input">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>220</x>
       <y>140</y>
       <width>281</width>
       <height>41</height>
@@ -346,7 +346,7 @@
    <widget class="QFrame" name="Out">
     <property name="geometry">
      <rect>
-      <x>860</x>
+      <x>760</x>
       <y>140</y>
       <width>281</width>
       <height>41</height>
@@ -394,142 +394,13 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1150</width>
-     <height>23</height>
+     <width>1299</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>InputMetricUnits</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBoxInputMetricUnits</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>310</x>
-     <y>183</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>299</x>
-     <y>133</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>InputMetricUnits</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBoxInputImperialUnits</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>304</x>
-     <y>186</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>295</x>
-     <y>83</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>InputImperialUnits</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBoxInputMetricUnits</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>443</x>
-     <y>177</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>394</x>
-     <y>137</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>InputImperialUnits</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBoxInputImperialUnits</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>442</x>
-     <y>187</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>441</x>
-     <y>85</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>OutMetricUnits</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBoxOutMetricUnits</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>932</x>
-     <y>184</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>931</x>
-     <y>140</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>OutMetricUnits</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBoxOutputImperialUnits</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>895</x>
-     <y>183</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>898</x>
-     <y>100</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>OutputImperialUnits</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBoxOutputImperialUnits</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1076</x>
-     <y>176</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1069</x>
-     <y>97</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>OutputImperialUnits</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBoxOutMetricUnits</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1038</x>
-     <y>179</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>933</x>
-     <y>132</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

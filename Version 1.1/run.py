@@ -3,7 +3,6 @@ from decimal import *
 from functools import partial
 
 from PyQt5.QtWidgets import QApplication, QMainWindow
-import Length
 import main
 
 
@@ -216,19 +215,19 @@ if __name__ == '__main__':
     ui.setupUi(mainWindow)
     mainWindow.show()
 
-    # ui.pushButton_area.clicked.connect(partial(area_convert, ui))
-    # ui.pushButton_area_clean.clicked.connect(partial(area_clean, ui))
-    #
-    # ui.pushButton_length.clicked.connect(partial(length_convert,ui))
-    # ui.pushButton_length_clean.clicked.connect(partial(length_clean,ui))
-    #
-    # ui.pushButton_mass.clicked.connect(partial(mass_convert, ui))
-    # ui.pushButton_mass_clean.clicked.connect(partial(mass_clean, ui))
-    #
-    # ui.pushButton_speed.clicked.connect(partial(speed_convert, ui))
-    # ui.pushButton_speed_clean.clicked.connect(partial(speed_clean, ui))
-    #
-    # ui.pushButton_temperature.clicked.connect(partial(temperature_convert, ui))
-    # ui.pushButton_temperature_clean.clicked.connect(partial(temperature_clean, ui))
+    ui.pushButton_area.clicked.connect(partial(area_convert, ui))
+    ui.pushButton_area_clean.clicked.connect(partial(area_clean, ui))
+
+    ui.pushButton_length.clicked.connect(partial(length_convert,ui))
+    ui.pushButton_length_clean.clicked.connect(partial(length_clean,ui))
+
+    ui.pushButton_mass.clicked.connect(partial(mass_convert, ui))
+    ui.pushButton_mass_clean.clicked.connect(partial(mass_clean, ui))
+
+    ui.pushButton_speed.clicked.connect(partial(speed_convert, ui))
+    ui.pushButton_speed_clean.clicked.connect(partial(speed_clean, ui))
+
+    ui.pushButton_temperature.clicked.connect(partial(temperature_convert, ui))
+    ui.pushButton_temperature_clean.clicked.connect(partial(temperature_clean, ui))
 
     sys.exit(app.exec_())
