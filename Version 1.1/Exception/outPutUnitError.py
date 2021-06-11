@@ -1,0 +1,2 @@
+class outPutUnitError(Exception):
+    pass

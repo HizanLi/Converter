@@ -1,0 +1,2 @@
+class inputUnitError(Exception):
+    pass
