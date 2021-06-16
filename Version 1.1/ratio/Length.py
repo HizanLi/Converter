@@ -1,6 +1,5 @@
-from Exception import inputUnitError,outPutUnitError
+from ..Exception import inputUnitError,outPutUnitError
 from decimal import Decimal
-
 # this is the ratio between kilometer and other length unit
 lengthKilometer = {"Kilometer": 1,
                    "Meter": 1000,
