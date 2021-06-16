@@ -16,8 +16,8 @@ lengthKilometer = {"Kilometer": 1,
                    "Yard": 1093.6132983,
                    "Mile": 0.6213712,
                    "SeaMile": 0.539956,
-                   "Furlong": 546.8066492,
-                   "Fathom": 4.9709695
+                   "Furlong": 4.9709695,
+                   "Fathom": 546.8066492
                    }
 # this is the ratio between meter and other length unit
 lengthMeter = {"Kilometer": 0.001,
