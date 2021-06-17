@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="Out">
+   <widget class="QFrame" name="OutCheckVolume">
     <property name="geometry">
      <rect>
       <x>860</x>
@@ -32,7 +32,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QRadioButton" name="OutVolumeMetric">
+    <widget class="QRadioButton" name="OutVolumeMetricVolume">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -45,7 +45,7 @@
       <string>公制单位</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="OutVolumeImperial">
+    <widget class="QRadioButton" name="OutVolumeImperialVolume">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -59,7 +59,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QLineEdit" name="LengthInput">
+   <widget class="QLineEdit" name="VolumeInput">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -72,7 +72,7 @@
      <string notr="true">font: 12pt &quot;Arial&quot;;</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="LengthOut">
+   <widget class="QLineEdit" name="VolumeOut">
     <property name="geometry">
      <rect>
       <x>600</x>
@@ -85,7 +85,7 @@
      <string notr="true">font: 12pt &quot;Arial&quot;;</string>
     </property>
    </widget>
-   <widget class="QFrame" name="Input">
+   <widget class="QFrame" name="InputCheckVolume">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -103,7 +103,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QRadioButton" name="InVolumeMetric">
+    <widget class="QRadioButton" name="InVolumeMetricVolume">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -116,7 +116,7 @@
       <string>公制单位</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="InVolumeImperial">
+    <widget class="QRadioButton" name="InVolumeImperialVolume">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -130,7 +130,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QComboBox" name="comboBoxInputImperialUnits">
+   <widget class="QComboBox" name="comboBoxInputImperialUnitsVolume">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -159,7 +159,7 @@
      </property>
     </item>
    </widget>
-   <widget class="QComboBox" name="comboBoxInputMetricUnits">
+   <widget class="QComboBox" name="comboBoxInputMetricUnitsVolume">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -245,7 +245,7 @@
      <string>Convert Volume/体积换算</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBoxInputMetricUnits_2">
+   <widget class="QComboBox" name="comboBoxOutputMetricUnitsVolume">
     <property name="geometry">
      <rect>
       <x>860</x>
@@ -299,7 +299,7 @@
      </property>
     </item>
    </widget>
-   <widget class="QComboBox" name="comboBoxInputImperialUnits_2">
+   <widget class="QComboBox" name="comboBoxOutputImperialUnitsVolume">
     <property name="geometry">
      <rect>
       <x>860</x>
@@ -341,7 +341,7 @@
      <string>Covert/转换</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="cleancolume">
+   <widget class="QPushButton" name="cleanVolume">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -370,9 +370,9 @@
  <resources/>
  <connections>
   <connection>
-   <sender>InVolumeMetric</sender>
+   <sender>InVolumeMetricVolume</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputMetricUnits</receiver>
+   <receiver>comboBoxInputMetricUnitsVolume</receiver>
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -386,9 +386,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>OutVolumeMetric</sender>
+   <sender>OutVolumeMetricVolume</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputMetricUnits_2</receiver>
+   <receiver>comboBoxOutputMetricUnitsVolume</receiver>
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -402,9 +402,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>OutVolumeImperial</sender>
+   <sender>OutVolumeImperialVolume</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputMetricUnits_2</receiver>
+   <receiver>comboBoxOutputMetricUnitsVolume</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -418,9 +418,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>InVolumeImperial</sender>
+   <sender>InVolumeImperialVolume</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputMetricUnits</receiver>
+   <receiver>comboBoxInputMetricUnitsVolume</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -434,9 +434,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>InVolumeMetric</sender>
+   <sender>InVolumeMetricVolume</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputImperialUnits</receiver>
+   <receiver>comboBoxInputImperialUnitsVolume</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -450,9 +450,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>InVolumeImperial</sender>
+   <sender>InVolumeImperialVolume</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputImperialUnits</receiver>
+   <receiver>comboBoxInputImperialUnitsVolume</receiver>
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -466,9 +466,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>OutVolumeMetric</sender>
+   <sender>OutVolumeMetricVolume</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputImperialUnits_2</receiver>
+   <receiver>comboBoxOutputImperialUnitsVolume</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -482,9 +482,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>OutVolumeImperial</sender>
+   <sender>OutVolumeImperialVolume</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputImperialUnits_2</receiver>
+   <receiver>comboBoxOutputImperialUnitsVolume</receiver>
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">

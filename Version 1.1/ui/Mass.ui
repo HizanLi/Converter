@@ -13,14 +13,425 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>360</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 24pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Convert Mass/质量换算</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxOutputImperialUnitsMass">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>60</y>
+      <width>281</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Inch/英尺</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Foot/ 英尺</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yard/码</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mile/英里</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NauticalMile/海</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Furlong/弗隆</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fathom/英寻</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QFrame" name="InputCheckBoxMass">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>140</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="InputMetricUnitsMass">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>公制单位</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="InputImperialUnitsMass">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>10</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>英制单位</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushMass">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>250</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Covert/转换</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cleanMass">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>250</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clean/归零</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>90</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 20pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxInputMetricUnitsMass">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>60</y>
+      <width>281</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Kilometer/千米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Meter/米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Decimetre/分米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Centimeter/厘米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Millimetre/毫米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nanometre/纳米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Picometer/皮米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LightYear/光年</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AstronomicalUnit/天文单位</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="MassOut">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>80</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxOutMetricUnitsMass">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>60</y>
+      <width>281</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Kilometer/千米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Meter/米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Decimetre/分米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Centimeter/厘米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Millimetre/毫米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nanometre/纳米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Picometer/皮米</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LightYear/光年</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AstronomicalUnit/天文单位</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="MassInput">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxInputImperialUnitsMass">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>60</y>
+      <width>280</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Inch/英尺</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Foot/ 英尺</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yard/码</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mile/英里</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NauticalMile/海</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Furlong/弗隆</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fathom/英寻</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QFrame" name="OutCheckBoxMass">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>140</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="OutMetricUnitsMass">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>公制单位</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="OutputImperialUnitsMass">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>10</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>英制单位</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>1036</width>
-     <height>23</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

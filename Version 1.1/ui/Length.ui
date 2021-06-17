@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QComboBox" name="comboBoxInputMetricUnits">
+   <widget class="QComboBox" name="comboBoxInputMetricUnitsLength">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -78,7 +78,7 @@
      </property>
     </item>
    </widget>
-   <widget class="QComboBox" name="comboBoxInputImperialUnits">
+   <widget class="QComboBox" name="comboBoxInputImperialUnitsLength">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -145,7 +145,7 @@
      <string notr="true">font: 12pt &quot;Arial&quot;;</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBoxOutMetricUnits">
+   <widget class="QComboBox" name="comboBoxOutMetricUnitsLength">
     <property name="geometry">
      <rect>
       <x>860</x>
@@ -308,7 +308,7 @@
      <string>Convert Length/长度换算</string>
     </property>
    </widget>
-   <widget class="QFrame" name="Input">
+   <widget class="QFrame" name="InputCheckLength">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -326,7 +326,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QRadioButton" name="InputMetricUnits">
+    <widget class="QRadioButton" name="InputMetricUnitsLength">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -339,7 +339,7 @@
       <string>公制单位</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="InputImperialUnits">
+    <widget class="QRadioButton" name="InputImperialUnitsLength">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -353,7 +353,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="Out">
+   <widget class="QFrame" name="OutCheckLength">
     <property name="geometry">
      <rect>
       <x>860</x>
@@ -371,7 +371,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QRadioButton" name="OutMetricUnits">
+    <widget class="QRadioButton" name="OutMetricUnitsLength">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -384,7 +384,7 @@
       <string>公制单位</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="OutputImperialUnits">
+    <widget class="QRadioButton" name="OutputImperialUnitsLength">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -440,9 +440,9 @@
  <resources/>
  <connections>
   <connection>
-   <sender>InputMetricUnits</sender>
+   <sender>InputMetricUnitsLength</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputMetricUnits</receiver>
+   <receiver>comboBoxInputMetricUnitsLength</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -456,9 +456,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>InputMetricUnits</sender>
+   <sender>InputMetricUnitsLength</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputImperialUnits</receiver>
+   <receiver>comboBoxInputImperialUnitsLength</receiver>
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -472,9 +472,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>InputImperialUnits</sender>
+   <sender>InputImperialUnitsLength</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputMetricUnits</receiver>
+   <receiver>comboBoxInputMetricUnitsLength</receiver>
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -488,9 +488,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>InputImperialUnits</sender>
+   <sender>InputImperialUnitsLength</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxInputImperialUnits</receiver>
+   <receiver>comboBoxInputImperialUnitsLength</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -504,9 +504,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>OutMetricUnits</sender>
+   <sender>OutMetricUnitsLength</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxOutMetricUnits</receiver>
+   <receiver>comboBoxOutMetricUnitsLength</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -520,7 +520,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>OutMetricUnits</sender>
+   <sender>OutMetricUnitsLength</sender>
    <signal>clicked()</signal>
    <receiver>comboBoxOutputImperialUnits</receiver>
    <slot>hide()</slot>
@@ -536,7 +536,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>OutputImperialUnits</sender>
+   <sender>OutputImperialUnitsLength</sender>
    <signal>clicked()</signal>
    <receiver>comboBoxOutputImperialUnits</receiver>
    <slot>show()</slot>
@@ -552,9 +552,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>OutputImperialUnits</sender>
+   <sender>OutputImperialUnitsLength</sender>
    <signal>clicked()</signal>
-   <receiver>comboBoxOutMetricUnits</receiver>
+   <receiver>comboBoxOutMetricUnitsLength</receiver>
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
