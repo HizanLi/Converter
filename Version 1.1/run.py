@@ -4,7 +4,7 @@ from functools import partial
 from decimal import Decimal
 from PyQt5.QtWidgets import QApplication, QMainWindow
 import main
-
+from ratio import *
 
 # python -m PyQt5.uic.pyuic asds.ui -o asds.py
 
